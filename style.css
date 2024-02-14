@@ -6,13 +6,21 @@
 
 header{
     z-index: 100;
-    width: 100%;
-    padding: 5%;
-    margin: 0;   
+    padding: 0  ;
+    margin: 0; 
+    height: 100px;  
+}
+
+footer {
+    clear: both;
+    background-color: #ff70a5;
+    padding: 0;
+    margin: 0;
 }
 
 #headertext {
     margin: 0%;
+    padding: 0;
 }
 
 h1 {
@@ -22,12 +30,13 @@ h1 {
 body{
     margin: 0;
     padding: 0;
+    background-color: #ffd6e4;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 300px 200px 200px;
+    grid-template-columns: 1fr 1fr;
+
 }
 
 .first {
@@ -38,11 +47,35 @@ body{
 
 .second {
     grid-column: 3;
-    background-color: #ffd6e4;
     margin: 0%;
     padding: 5%
 }
 
+.flex-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
 .card {
-    background-color: #ffffff;
+    background-color:#ffffff    ;
+    min-width: 30%;
+    max-width: 30vh;
+    padding: 5%;
+    flex-shrink: 0;
+    border-radius: 5%;
+}
+
+#workgif {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+}
+
+#giftitle {
+    display :block
 }
